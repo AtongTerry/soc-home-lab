@@ -1,4 +1,4 @@
-# SOC Analyst Home Lab
+# SOC Home Lab
 
 A segmented virtual network built in Oracle VirtualBox on one host. It includes a pfSense firewall, an Active Directory domain, a monitored Windows 11 client, a Wazuh SIEM, and a Kali attacker. The goal is to practice network segmentation, log collection, attack simulation, and detection engineering.
 
