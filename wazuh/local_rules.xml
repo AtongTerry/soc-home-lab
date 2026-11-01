@@ -1,0 +1,11 @@
+<!-- Local rules for SIEM01 (Wazuh 4.14). Path on server: /var/ossec/etc/rules/local_rules.xml -->
+<group name="local,windows,authentication_success,">
+  <rule id="100100" level="12">
+    <if_sid>92652</if_sid>
+    <if_matched_sid>60122</if_matched_sid>
+    <description>Successful logon following repeated failures - possible brute-force compromise</description>
+    <mitre>
+      <id>T1110</id>
+    </mitre>
+  </rule>
+</group>

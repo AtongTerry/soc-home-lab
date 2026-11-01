@@ -1,0 +1,10 @@
+# Never commit real credentials, exported VM images, or host-specific files
+*.ova
+*.vdi
+*.vmdk
+*.pcap
+*.log
+.DS_Store
+Thumbs.db
+secrets/
+*.pem
