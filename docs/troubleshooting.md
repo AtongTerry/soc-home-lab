@@ -22,16 +22,16 @@ Problems hit while building the lab, and what resolved them.
 ## Screenshots
 
 **Bad attribute in local_rules.xml (XML error)**
-![XML bad attribute error](screenshots/02-troubleshoot-xml-bad-attribute-error.png)
+![XML bad attribute error](../screenshots/02-troubleshoot-xml-bad-attribute-error.png)
 
 **Duplicate rule blocks**
-![Duplicate rule blocks](screenshots/03-troubleshoot-duplicate-rule-blocks.png)
+![Duplicate rule blocks](../screenshots/03-troubleshoot-duplicate-rule-blocks.png)
 
 **Rule 100100 before same_source_ip was removed**
-![Rule 100100 before fix](screenshots/04-rule-100100-before-same-source-ip-removed.png)
+![Rule 100100 before fix](../screenshots/04-rule-100100-before-same-source-ip-removed.png)
 
 **Config test passes after cleanup**
-![Config test passes](screenshots/05-troubleshoot-config-test-after-cleanup.png)
+![Config test passes](../screenshots/05-troubleshoot-config-test-after-cleanup.png)
 
 **Config test passes before rule fires**
-![Config test output](screenshots/11-config-test-passes-before-rule-fire.png)
+![Config test output](../screenshots/11-config-test-passes-before-rule-fire.png)
