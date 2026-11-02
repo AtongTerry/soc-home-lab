@@ -37,12 +37,25 @@ Known limitations:
 
 ## Key screenshots
 
-| Step | Screenshot |
-|---|---|
-| Attack runs from Kali | `screenshots/06-attack-netexec-smb-broken-pipe.png` |
-| Logon failures in Wazuh | `screenshots/07-wazuh-60122-logon-failures.png` |
-| Success from the same source IP | `screenshots/08-wazuh-discover-60122-and-92652-source-ip.png` |
-| Rule 100100 fires at level 12 | `screenshots/12-rule-100100-fired-level-12.png` |
+**Attack from Kali (netexec SMB)**
+
+![netexec SMB attack from Kali](screenshots/06-attack-netexec-smb-broken-pipe.png)
+
+**Logon failures in Wazuh (rule 60122)**
+
+![Wazuh rule 60122 logon failures](screenshots/07-wazuh-60122-logon-failures.png)
+
+**Success from the same source IP (rule 92652)**
+
+![Wazuh Discover showing 60122 and 92652 from 10.10.30.100](screenshots/08-wazuh-discover-60122-and-92652-source-ip.png)
+
+**Rule 100100 fires at level 12**
+
+![Wazuh rule 100100 fired at level 12](screenshots/12-rule-100100-fired-level-12.png)
+
+**Wazuh overview**
+
+![Wazuh overview alert summary](screenshots/13-wazuh-overview-alert-summary.png)
 
 ## Security note
 

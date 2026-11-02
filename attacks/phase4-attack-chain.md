@@ -17,13 +17,25 @@ nxc smb 10.10.20.101 -u aadmin -p /tmp/small-pw-list.txt
 - Multi-password runs produced intermittent `Broken Pipe` errors. A single explicit password test worked.
 - Valid credential found. The password is intentionally weak and is not recorded here.
 
-Screenshot: `screenshots/06-attack-netexec-smb-broken-pipe.png`
+![netexec SMB attack with Broken Pipe errors](screenshots/06-attack-netexec-smb-broken-pipe.png)
 
 ## 3. What Wazuh saw
-- Logon failures, rule 60122 (level 5), source 10.10.30.100 (`screenshots/07`, `screenshots/10`)
-- Logon success, rule 92652 (level 6), same source IP, NTLM (`screenshots/08`, `screenshots/09`)
-- Correlation rule 100100 (level 12, T1110) (`screenshots/12`)
+- Logon failures, rule 60122 (level 5), source 10.10.30.100
+
+![Logon failures, rule 60122](screenshots/07-wazuh-60122-logon-failures.png)
+
+![Rule 60122 details, level 5](screenshots/10-wazuh-rule-60122-logon-failure.png)
+
+- Logon success, rule 92652 (level 6), same source IP, NTLM
+
+![Rule 92652 details, level 6](screenshots/09-wazuh-rule-92652-logon-success.png)
+
+- Correlation rule 100100 (level 12, T1110)
+
+![Rule 100100 fired at level 12](screenshots/12-rule-100100-fired-level-12.png)
 
 ## 4. Verifying the evidence in Discover
 Query used: `agent.name: "WIN11-CLIENT" and (rule.id: "60122" or "92652")`
 Four hits, all with `data.win.eventdata.ipAddress: 10.10.30.100`.
+
+![Discover: four hits from 10.10.30.100](screenshots/08-wazuh-discover-60122-and-92652-source-ip.png)

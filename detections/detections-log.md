@@ -24,8 +24,13 @@ Results of the Phase 4 attack and detection exercises.
 
 ## Evidence
 
-| Detection | Screenshot |
-|---|---|
-| DET-003 failures | `screenshots/07-wazuh-60122-logon-failures.png`, `screenshots/10-wazuh-rule-60122-logon-failure.png` |
-| DET-003 success | `screenshots/08-wazuh-discover-60122-and-92652-source-ip.png`, `screenshots/09-wazuh-rule-92652-logon-success.png` |
-| DET-004 | `screenshots/12-rule-100100-fired-level-12.png` |
+### DET-001: Nmap scan
+No screenshot. Nmap showed one open port and no Wazuh alerts.
+
+### DET-003: credential attack, failures and success
+![DET-003 failures](screenshots/07-wazuh-60122-logon-failures.png)
+
+![DET-003 success from same source IP](screenshots/08-wazuh-discover-60122-and-92652-source-ip.png)
+
+### DET-004: rule 100100 fires
+![DET-004 rule 100100 fired](screenshots/12-rule-100100-fired-level-12.png)
